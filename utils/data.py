@@ -73,6 +73,7 @@ class Responses:
     ERROR_LOGIN_INVALID_DATA =  "email or password are incorrect"
     ERROR_EMPTY_ORDER = "Ingredient ids must be provided"
     ERROR_WRONG_HASH = "Internal Server Error"
+    ERROR_GET_ORDER_NO_AUTH = "You should be authorised"
 
 
 class Ingredients:
