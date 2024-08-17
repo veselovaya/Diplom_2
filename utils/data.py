@@ -69,5 +69,17 @@ class InvalidData:
 class Responses:
     ERROR_USER_EXISTS = "User already exists"
     ERROR_CREATE_USER_NO_PARAM = "Email, password and name are required fields"
-    ERROR_UPDATE_NO_AUTH = 'You should be authorised'
+    ERROR_UPDATE_NO_AUTH = "You should be authorised"
     ERROR_LOGIN_INVALID_DATA =  "email or password are incorrect"
+    ERROR_EMPTY_ORDER = "Ingredient ids must be provided"
+    ERROR_WRONG_HASH = "Internal Server Error"
+
+
+class Ingredients:
+    valid_ingredients = {
+        "ingredients": ["61c0c5a71d1f82001bdaaa6d", "61c0c5a71d1f82001bdaaa6f"]
+    }
+
+    invalid_ingredients = {
+        "ingredients": ["61c0c5a71d1", "61c0c5a71d1f"]
+    }
